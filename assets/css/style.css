@@ -93,6 +93,7 @@ nav {
     width: 100vw;
     height: 100vh;
     
+    
     /* Flexbox  */
     display: flex;
     justify-content: center;
@@ -118,6 +119,7 @@ nav {
      background-position: center center;
      background-repeat: no-repeat;
      background-attachment: fixed;
+
     
     
 }
@@ -134,12 +136,27 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 47px;
     background-color: lightgoldenrodyellow;
     
-
+    
+    
     
 }
+
+main h2 {
+
+    font-size: 18px;
+    color: rgb(79, 77, 77);
+    text-transform: capitalize;
+    font-weight:500;
+    font-family: 'Poppins';
+    position:relative;
+
+
+}
+
+
+
 
 /* Footer */
 footer {
