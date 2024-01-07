@@ -139,8 +139,6 @@ main {
     background-color: lightgoldenrodyellow;
     
     
-    
-    
 }
 
 main h2 {
@@ -155,6 +153,55 @@ main h2 {
 
 }
 
+
+#past-circle {
+    background: url('../images/IMG_0536.JPG') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    align-items: center;
+}
+
+#past-circle img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #present-circle {
+        background: url('../images/modernlatouche.webp') no-repeat top center / cover;
+        height: 90vw;
+        width: 90vw;
+        margin-bottom: 20px;
+        /* Makes the square image into a circle */
+        border-radius: 50%;
+        max-width: 300px;
+        max-height: 300px;
+        align-items: center;
+    }
+    
+    #present-circle img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    
+}
 
 
 
