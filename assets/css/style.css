@@ -108,7 +108,82 @@ transition: transform .2s;
 
 
 /* MEDIA QUERIES */
-/* small handheld devices*/
-@media only screen and (max-width: 700px){
+/* small handheld devices eg:iphone SE*/
+@media only screen and (max-width: 600px){
+
+  .moves-info {
+    position: absolute;
+    left:155px;
+    top:215px;
+  }
+
+  .farm-game {
+    width: 100vw;
+    grid-gap: 2px;
+    margin: 50px auto;
+    padding-left: 40px;
+  }
+  .farm-card {
+    height: 90px;
+    width: 90px;
+  }
+
+  .card-front,
+  .card-back {
+    padding: 1px;
+  }
+
+
+  .farm-logo {
+    width: 170px;
+    height: 205px;
+    position: absolute;
+    left:120px;
+    top:10px;
+ 
+  }
+  .rules {
+    width: 140px;
+    height: 55px;
+  position:absolute;
+  top: 220px;
+  left: 100px;
+  padding-bottom: 10px;
+
   
   }
+
+  .restart {
+    width: 140px;
+    height: 55px;
+  position:absolute;
+  top: 220px;
+  left: 20px;
+  padding-bottom: 10px;
+  }
+}
+  /* tablet*/
+  @media (max-width: 768px) {
+    .farm-game {  
+     margin: 10px 0 40px;
+     padding-left: 30px;
+     position:absolute;
+     top: 350px;
+     left:100px;
+    }
+    .farm-logo {
+     width: 260px;
+     height: 305px;
+     position: absolute;
+     left:250px;
+     top:10px;
+   
+   }
+   .moves-info {
+     position: absolute;
+     left:325px;
+     top:315px;
+   }
+    } 
+   
+   
