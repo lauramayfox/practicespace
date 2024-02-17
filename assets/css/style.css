@@ -9,6 +9,14 @@ body {
     display: flex;
     background: #D55225 
   }
+  
+  .moves-info {
+    color: black;
+    font-size: 25px;
+    position:absolute;
+    top: 565px;
+    left: 430px;
+  }
 
   .farm-logo {
     width: 300px;
@@ -22,7 +30,7 @@ body {
     width: 140px;
     height: 55px;
   position:absolute;
-  top: 210px;
+  top: 215px;
   left: 530px;
   }
 
@@ -30,7 +38,7 @@ body {
     width: 140px;
     height: 55px;
   position:absolute;
-  top: 240px;
+  top: 250px;
   left: 530px;
   }
 
