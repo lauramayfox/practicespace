@@ -10,13 +10,38 @@ body {
     background: #D55225 
   }
 
+  .farm-logo {
+    width: 300px;
+    height: 325px;
+    position:relative;
+    margin-top: 95px;
+    margin-right: 160px;
+  }
+
+  .rules {
+    width: 140px;
+    height: 55px;
+  position:absolute;
+  top: 210px;
+  left: 530px;
+  }
+
+  .restart {
+    width: 140px;
+    height: 55px;
+  position:absolute;
+  top: 240px;
+  left: 530px;
+  }
+
   .farm-game {
-    width: 640px;
-    height: 640px;
+    width: 500px;
+    height: 420px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    /* add 3D perspective with flip*/
+
+    /* add 3D perspective with flipmarina-ferreira.github.io tutorial*/
     perspective: 1000px;
     
   }
@@ -27,6 +52,7 @@ body {
     margin: 5px;
     position: relative;
     transform: scale(1);
+
     /*3D perspective on card flip */
     transform-style: preserve-3d;
     transition: transform.5s;
@@ -43,11 +69,14 @@ transition: transform .2s;
 
 .front-face,
 .back-face {
+  justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 15px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 13px;
+  border-width: .2.5px;
+  border: 4px solid white;
   background: #F7941D;
   backface-visibility: hidden;
 }
