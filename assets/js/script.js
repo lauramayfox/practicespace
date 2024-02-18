@@ -1,9 +1,24 @@
 const cards = document.querySelectorAll('.farm-card');
+const moveContainer = document.querySelector(".moves");
 
 //to know which card flips first to match
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let moves = 0;
+
+//score count feature javascript academy tut
+
+ moves = 0;
+ moveContainer.innerHtml = 0;
+ 
+ function addMove() {
+     moves++;
+     moveContainer.innerHTML = moves;
+
+ }
+
+
 
 function flipCard() {
   if (lockBoard) return;
@@ -16,6 +31,7 @@ function flipCard() {
     firstCard = this;
 
     return;
+   
   }
 
   // second click
@@ -29,6 +45,9 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
+
+   // Add move to counter
+   addMove();
 }
 
 function disableCards() {

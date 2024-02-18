@@ -11,44 +11,39 @@ body {
   
   }
   
-  .moves-info {
+  .game-info {
     color: black;
     font-size: 25px;
     position:absolute;
-   top:300px;
-   left:660px;
+    top: 400px;
+    left: 200px;
+    padding-top: 20px;
+   
   }
+
+  .actions {
+    position:absolute;
+    top: 460px;
+    left: 187px;
+    padding-bottom: 20px;
+  }
+
+  .actions button {
+    padding: 8px 16px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: #F7941D;
+    color: black;
+}
 
   .farm-logo {
-    width: 260px;
-    height: 305px;
+    padding-top: 20px;
+    width: 265px;
+    height: 310px;
     position: absolute;
-    top:5px;
-    right: 590px;
-    padding-top: 10px;
+    align-items: center;
+    left:580px;
  
-  }
-
-
-
-  .rules {
-    width: 140px;
-    height: 55px;
-  position:absolute;
-  top: 220px;
-  left:130px;
-  padding-bottom: 10px;
-
-  
-  }
-
-  .restart {
-    width: 140px;
-    height: 55px;
-  position:absolute;
-  top: 220px;
-  left: 50px;
-  padding-bottom: 10px;
   }
 
   .farm-game {
@@ -142,25 +137,6 @@ transition: transform .2s;
     
     
  
-  }
-  .rules {
-    width: 140px;
-    height: 55px;
-  position:absolute;
-  top: 220px;
-  left: 95px;
-  padding-bottom: 10px;
-
-  
-  }
-
-  .restart {
-    width: 140px;
-    height: 55px;
-  position:absolute;
-  top: 220px;
-  left: 15px;
-  padding-bottom: 10px;
   }
 }
   /* tablet*/
