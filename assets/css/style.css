@@ -11,7 +11,7 @@ body {
   
   }
   
-  .game-info {
+  .moves-info {
     color: black;
     font-size: 25px;
     position:absolute;
@@ -104,18 +104,24 @@ transition: transform .2s;
 
 /* MEDIA QUERIES */
 /* small handheld devices eg:iphone SE*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 667px){
 
   .moves-info {
-    position: absolute;
-    left:90px;
-    top:215px;
+    display: flex;
+    margin-top: 85px;
+    margin-left: -190px;
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -70px;
   }
 
   .farm-game {
     width: 100vw;
     grid-gap: 2px;
-    margin: 50px auto;
+    
     
   }
   .farm-card {
@@ -130,10 +136,11 @@ transition: transform .2s;
 
 
   .farm-logo {
-    width: 170px;
-    height: 205px;
-    position: absolute;
-    left:90px;
+    width: 100vh;
+    display: flex;
+   margin-left: -80px;
+  
+  
     
     
  
