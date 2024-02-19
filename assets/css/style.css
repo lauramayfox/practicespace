@@ -104,7 +104,7 @@ transition: transform .2s;
 
 /* MEDIA QUERIES */
 /* small handheld devices eg:iphone SE*/
-@media only screen and (max-width: 667px){
+@media only screen and (max-width: 667px & min-width:375px){
 
   .moves-info {
     display: flex;
@@ -121,6 +121,7 @@ transition: transform .2s;
   .farm-game {
     width: 100vw;
     grid-gap: 2px;
+    margin-right: 100px;
     
     
   }
@@ -148,26 +149,37 @@ transition: transform .2s;
 }
   /* tablet*/
   @media (max-width: 768px) {
+
+    .moves-info {
+      display: flex;
+      margin-top: 10px;
+      
+    }
     .farm-game {  
      margin: 10px 0 40px;
      padding-left: 30px;
      position:absolute;
      top: 350px;
      left:100px;
+     right:100px;
+     
     }
     .farm-logo {
      width: 260px;
      height: 305px;
      position: absolute;
-     left:250px;
+     left:240px;
      top:10px;
    
    }
-   .moves-info {
-     position: absolute;
-     left:325px;
-     top:315px;
-   }
+
+   .actions {
+    padding-bottom: -40px;
+    display: flex;
+    margin-top: 10px;
+    
+  }
+  
     } 
    
    
