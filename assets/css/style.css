@@ -6,45 +6,20 @@
 
 body {
     height: 100vh;
-    display: flex;
     background: #D55225 
-  
   }
   
-  .moves-info {
-    color: black;
-    font-size: 25px;
-    position:absolute;
-    top: 400px;
-    left: 200px;
-    padding-top: 20px;
-   
-  }
-
-  .actions {
-    position:absolute;
-    top: 460px;
-    left: 187px;
-    padding-bottom: 20px;
-  }
-
-  .actions button {
-    padding: 8px 16px;
-    font-size: 25px;
-    border-radius: 20px;
-    background-color: #F7941D;
-    color: black;
-}
 
   .farm-logo {
-    padding-top: 20px;
+    padding-top: 10px;
     width: 265px;
     height: 310px;
     position: absolute;
     align-items: center;
+    top:20px;
     left:580px;
  
-  }
+  } 
 
   .farm-game {
     width: 500px;
@@ -53,8 +28,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    top: 210px;
-    padding-bottom: 10px;
+    top: 345px;
+    
+    padding-bottom: 40px;
     
 
     /* add 3D perspective with flipmarina-ferreira.github.io tutorial*/
@@ -101,21 +77,47 @@ transition: transform .2s;
   transform: rotateY(180deg);
 }
 
+.moves-info {
+  color: black;
+  font-size: 25px;
+  position:absolute;
+  align-items: center;
+  left:660px;
+  top:720px;
+  padding-top: 20px;
+ 
+}
+
+.actions {
+  position: absolute;
+  align-items: center;
+  left:645px;
+  top:780px;
+
+ 
+}
+
+.actions button {
+  padding: 8px 16px;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: #F7941D;
+  color: black;
+}
+
 
 /* MEDIA QUERIES */
 /* small handheld devices eg:iphone SE*/
 @media only screen and (max-width: 667px & min-width:375px){
 
   .moves-info {
-    display: flex;
-    margin-top: 85px;
-    margin-left: -190px;
+   
+    
   }
 
   .actions {
-    display: flex;
-    margin-top: 10px;
-    margin-left: -70px;
+  
+    
   }
 
   .farm-game {
@@ -151,8 +153,12 @@ transition: transform .2s;
   @media (max-width: 768px) {
 
     .moves-info {
-      display: flex;
-      margin-top: 10px;
+     
+      
+    }
+
+    .actions {
+     
       
     }
     .farm-game {  
@@ -173,12 +179,7 @@ transition: transform .2s;
    
    }
 
-   .actions {
-    padding-bottom: -40px;
-    display: flex;
-    margin-top: 10px;
-    
-  }
+  
   
     } 
    
